@@ -1,6 +1,6 @@
 # Algorithm and Data Structure with C++
 **Deskripsi :**
-Mata kuliah teori dan praktik mengenai pemanfaatan struktur data data penyelesaian masalah komputasi. Mahasiswa diharapkan dapat  menentukan pilihan dalam pemanfaatan struktur data yang ada dan tepat untuk penyelesaian masalah komputasi yang dihadapinya 
+Teori dan praktik mengenai pemanfaatan struktur data data penyelesaian masalah komputasi. diharapkan dapat menentukan pilihan dalam pemanfaatan struktur data yang ada dan tepat untuk penyelesaian masalah komputasi yang dihadapi
 
 **Pokok Bahasan :**
 1.	Sejarah Algoritma & Struktur Dasar Program C++
