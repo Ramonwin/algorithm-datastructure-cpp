@@ -2,13 +2,17 @@
 
 using namespace std;
 int main(){
-	//looping - while (counted loop & uncounted loop)
+	/*
+	looping - while
+	*/
 	
 	int i=1;
+	
 	while(i<=20){
-		cout<< "Haii: " << i <<endl;
+		printf("haii \n");
 		i++;
 	}
+	cout<<"=========================================="<<endl;
 	
 	return 0;
 }

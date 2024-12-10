@@ -2,8 +2,7 @@
 using namespace std;
 
 int main() {
-	// Quiz
-	// Buatlah deret bintang segitiga siku siku terbalik
+	// deret bintang segitiga siku siku terbalik
 	
     int n;
 

@@ -22,7 +22,8 @@ struct buah {
 };
 
 int main(){
-	buah apel;
+	buah apel; // memanggil struct
+	
 	buah jeruk ={"Orange",1.50f,20000,"asem"};
 	
 	apel.warna="merah";

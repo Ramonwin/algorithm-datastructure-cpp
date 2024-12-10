@@ -2,12 +2,12 @@
 using namespace std;
 
 int main() {
-	// Nested For - Perulangan Bersarang
+	// Perulangan Bersarang (Nested Loop)
 	// deret bintang segitiga siku siku
 	
     int n;
 
-    cout << " Masukkan jumlah baris: ";
+    cout << "Masukkan jumlah baris: ";
     cin >> n;
 
     for (int i = 1; i <= n; i++) {

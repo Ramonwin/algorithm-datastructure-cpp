@@ -7,7 +7,8 @@ int main(){
 		1. for (counted loop)
 		2. while (counted loop & uncounted loop)
 		3. do while
-		4. Nested For
+		4. do until, foreach, for in,
+		5. Nested For
 	*/
 	int i;
 	int tgl;

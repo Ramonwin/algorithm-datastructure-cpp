@@ -8,12 +8,14 @@ int main(){
 		2. Input 5 nama karyawan
 		3. Input 5 Status Karyawan :
 			a. Jika kode 1 adalah karyawan tetap, bonus = 2 x Gaji Pokok
-			b. Jika kode 2 adalah karyawan kontrak, bonus = 1 x Gaji Pokok		
+			b. Jika kode 2 adalah karyawan kontrak, bonus = 1 x Gaji Pokok
+			c. Jika kode selain 1 & 2, tidak ada bonus, bonus = 0	
 		4. Total gaji = Gapok + Bonus
-		5. Tampilkan Output : Nama karyawan & Total Gaji (berurutan)
+		5. Jika Total gaji melebihi 10jt maka dikenakan pph21 sebesar 2%
+		6. Tampilkan Output : Nama karyawan & Total Gaji & Pajak (berurutan)
 	*/
 	
-	int i, gapok, bonus, total_gaji;
+	int i, gapok, bonus, total_gaji, pajak;
 	int status[5];
 	string nama[5];
 	
@@ -36,10 +38,31 @@ int main(){
 	for(i=0;i<5;i++){
 		if(status[i] == 1){
 			bonus = 2 * gapok;
-			cout<<nama[i]<<" - Total Gaji :"<< gapok + bonus <<endl;
-		}else{
+			total_gaji = gapok + bonus;
+			if(total_gaji > 10000000){
+				pajak = 0.02 * total_gaji;
+				cout<<nama[i]<<" - Total Gaji : "<< total_gaji <<" - Pajak PPH21 (2%) : "<<pajak<<endl;	
+			}else{
+				cout<<nama[i]<<" - Total Gaji : "<< total_gaji <<endl;
+			}
+		}else if (status[i]==2){
 			bonus = 1 * gapok;
-			cout<<nama[i]<<" - Total Gaji :"<< gapok + bonus <<endl;
+			total_gaji = gapok + bonus;
+			if(total_gaji > 10000000){
+				pajak = 0.02 * total_gaji;
+				cout<<nama[i]<<" - Total Gaji : "<< total_gaji <<" - Pajak PPH21 (2%) : "<<pajak<<endl;	
+			}else{
+				cout<<nama[i]<<" - Total Gaji : "<< total_gaji <<endl;
+			}
+		}else{
+			bonus = 0;
+			total_gaji = gapok + bonus;
+			if(total_gaji > 10000000){
+				pajak = 0.02 * total_gaji;
+				cout<<nama[i]<<" - Total Gaji : "<< total_gaji <<" - Pajak PPH21 (2%) : "<<pajak<<endl;	
+			}else{
+				cout<<nama[i]<<" - Total Gaji : "<< total_gaji <<endl;
+			}
 		}
 	}
 	return 0;

@@ -1,12 +1,9 @@
 #include <iostream>
 using namespace std;
-
 int main(){
 	 // array = type data yg bisa menyimpan sekumpulan nilai
-	 // bentuk array ada 3:
-	 // array 1 dimensi, 2 dimensi, 3 dimensi
+	 // bentuk array ada 3: 1 dimensi, 2 dimensi, 3 dimensi
 	 // contoh array penyimpanan baju dalam lemari
-	 
 	 // int umur1;
 	 //	int umur2;
 	 //	int umur3;
@@ -25,8 +22,17 @@ int main(){
 	string buah[3]= {"semangka","nanas","jeruk"};
 	int x;
 	for(x=0; x<3; x++){
-		cout<<"buah :" <<buah[x]<<endl;
+		cout<<buah[x]<<endl;
 	}
+	
+	// membuat array
+    string contact[] = {"Ami", "Ayu", "Budi", "Agus", "Mila"};
+
+    //  mengambil banyaknya isi array
+    int length = sizeof(contact) / sizeof(*contact);
+    //int length = sizeof(contact) / sizeof(contact[0]);
+
+    cout<<"Banyaknya isi array nilai: "<< length <<endl;
 
 	/*cara ke-2 memberi nilai dinamis seusai inputan*/
 	int nilai[5];
