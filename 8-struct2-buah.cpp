@@ -1,18 +1,6 @@
 #include <iostream>
 #include <string>
-
 using namespace std;
-
-//string warna1;
-//float berat1;
-//int harga1;
-//string rasa1;
-
-
-//string warna2;
-//float berat2;
-//int harga2;
-//string rasa2;
 
 struct buah {
 	string warna;
@@ -22,7 +10,7 @@ struct buah {
 };
 
 int main(){
-	buah apel; // memanggil struct
+	buah apel; // menggunakan atau memanggil struct
 	
 	buah jeruk ={"Orange",1.50f,20000,"asem"};
 	
@@ -43,13 +31,7 @@ int main(){
 	cout << jeruk.berat <<endl;
 	cout << jeruk.harga <<endl;
 	cout << jeruk.rasa <<endl;
-	
-	// mencetak isi struct cara ke-2
-//	int i;
-//	for (i=0;i<4;i++){
-//		cout<<jeruk[i]<<" : " <<endl;
-//	}
-	
+		
 	return 0;
 }
 
